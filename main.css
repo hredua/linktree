@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    background: rgb(86,5,162);
+    background: linear-gradient(-121deg, rgb(121, 14, 153) 14%, rgba(104,33,226,1) 70%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px white;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: .9em;
+}
+
+.social {
+    margin: 20px 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.social img {
+    width: 48px;
+}
+
+.link-list, .link-extras {
+    list-style: none;
+}
+
+.link-extras {
+    margin-top: 50px;
+}
+
+.link-list li, .link-extras li {
+    margin: 10px 20px;
+}
+
+.link-list li a, .link-extras li a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(86,5,162);
+    font-weight: bold;
+    
+}
+
+.link-list li a {
+    box-shadow: 0 0 10px white;
+}
+
+.link-list li a span, .link-extras li a span {
+    color: gray;
+    font-weight: lighter;
+    font-size: .8em;
+    display: block;
+    margin-top: 10px;
+}
+
+ @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  .roll-in-left {
+	-webkit-animation: roll-in-left 1s ease-out 0.3s both;
+	        animation: roll-in-left 1s ease-out 0.3s both;
+}  
+
+ @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      transform: translateY(-600px) rotateX(-30deg) scale(0);
+      transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) rotateX(0) scale(1);
+      transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  .slide-in-elliptic-top-fwd {
+	animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}  
+  
